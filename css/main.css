@@ -3,11 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Spectral');
 
 html {
-    background-color: lightgray;
+    background-color: #c6e5ff;
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
-    background-image: url("../images/background.jpg");
     background-repeat: repeat;
     background-size: 2000px 1200px;
 }
