@@ -19,6 +19,9 @@
 .topnav a.hover, .active {
     background-color: darkcyan;
 }
+.topnav a.linkedin a.hover, .active {
+    background-color: 0072b1;
+}
 
 .topnav .icon {
     display: none;
