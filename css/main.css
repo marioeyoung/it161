@@ -72,6 +72,13 @@ a:hover {
     background-color: darkcyan;
     text-decoration: none;
 }
+
+a.github:hover {
+    color: whitesmoke;
+    background-color: #6e5494;
+    text-decoration: none;
+}
+
 a.linkedin:hover {
     color: whitesmoke;
     background-color: #0072b1;
