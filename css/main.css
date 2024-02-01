@@ -72,6 +72,11 @@ a:hover {
     background-color: darkcyan;
     text-decoration: none;
 }
+a.linkedin:hover {
+    color: whitesmoke;
+    background-color: #0072b1;
+    text-decoration: none;
+}
 
 footer {
     clear: both;
