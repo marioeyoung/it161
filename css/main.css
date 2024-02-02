@@ -4,9 +4,10 @@
 
 html {
     background-color: #c6e5ff;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Noto+Sans', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
+    background-image: url("../images/background.jpg");
     background-repeat: repeat;
     background-size: 2000px 1200px;
 }
@@ -62,13 +63,13 @@ h2,h3 {
 }
 
 a {
-    color:darkcyan;
+    color: #4A4DE7;
     text-decoration: none;
 }
 
 a:hover {
     color: whitesmoke;
-    background-color: darkcyan;
+    background-color: #c6e5ff;
     text-decoration: none;
 }
 
