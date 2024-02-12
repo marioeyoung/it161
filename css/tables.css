@@ -32,3 +32,6 @@ table.audience th {
 table.audience th{
   width:33.3%;
 }
+table.audience tr:nth-child(even) {
+  background-color: #e9cfe7;
+}
