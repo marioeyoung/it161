@@ -21,6 +21,11 @@ td,th {
 border:1px dotted #000;
 padding:.5em;
 }
+td.heading,th.heading {
+  border:1px dotted #000;
+  padding:.5em;
+  font-weight: bold;
+  }
 
 table.client {
   margin:40px auto; /* T R B L */
@@ -34,6 +39,7 @@ table.client th {
 
 table.audience th {
   margin:40px auto; /* T R B L */
+  background-color: #c6fffc;
 }
 
 table.audience th{
