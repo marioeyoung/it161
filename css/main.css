@@ -15,6 +15,7 @@ html {
 
 body{
     margin:0; /* removes gap at top of page */
+    position: relative;
 }
 
 ::selection {
