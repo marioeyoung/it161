@@ -5,6 +5,11 @@
     overflow: auto;
 }
 
+.topnav.scrolled{
+    background-color: #004da8 !important;
+    transition: background-color 200ms linear;
+}
+
 .topnav a {
     float: left;
     display: block;
