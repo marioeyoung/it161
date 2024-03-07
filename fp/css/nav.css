@@ -1,13 +1,15 @@
 /* Global rules */
 .topnav {
     margin: auto;
-    background-color: rgb(95,95,95);
+    background-color: transparent;
     overflow: auto;
+    position: fixed;
+    width: 80%;
 }
 
 .topnav.scrolled{
     background-color: #004da8 !important;
-    transition: background-color 200ms linear;
+    transition: background-color 200ms ease-in-out;
 }
 
 .topnav a {
@@ -20,8 +22,11 @@
     text-transform: capitalize;
     font-size: 16px;
 }
+.topnav a:hover {
+    background-color: #023047;
+}
 
-.topnav a.hover, .active {
+.topnav a.active {
     background-color: darkcyan;
 }
 
@@ -29,10 +34,47 @@
     display: none;
 }
 
+.topnav a.telephone {
+    float: left;
+    margin-left: 15%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    color: white;
+    padding: 12px 15px !important;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-youtube {
+    color: white;
+}
+.fa-instagram {
+    color: white;
+}
+.fa-snapchat-ghost {
+    color: white;
+}
+.social-container {
+    display: flex;
+    justify-content: right;
+}
+
 /* Responsive rules - apply when screen width is less than 1200px */
 
 @media screen and (max-width: 1199px) {
-    .topnav a:not(:first-child) {
+    .topnav a:not(.telephone,:first-child) {
         display: none;
     }
     
@@ -42,13 +84,16 @@
     }
     
     .topnav.responsive {
-        position: relative;
+        position: fixed;
+        max-width: 25%;
     }
     
     .topnav.responsive a {
         float: none;
         display: block;
         text-align: left;
+        margin-left: auto;
+        background-color: black;
     }
     
     .topnav.responsive a.icon {
@@ -56,6 +101,10 @@
         right: 0;
         top: 0;
     }
+    .social-container {
+        display: none;
+    }
+
 }
 
 

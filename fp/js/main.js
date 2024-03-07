@@ -16,3 +16,16 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+    /*
+        Taken from intl.seatllecolleges.edu
+        Changes class to make background of desktop 
+        nav blue instead of transparent on scroll
+        https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
+    */
+        $(function () {
+            $(document).scroll(function () {
+            var $nav = $(".topnav");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
