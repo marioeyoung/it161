@@ -55,7 +55,6 @@ main.wrapper {
     border-bottom-right-radius: 5px;
 }
 
-
 p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
 }
@@ -82,11 +81,14 @@ a:hover {
     background-color: #c6e5ff;
     text-decoration: none;
 }
-.logo {
+img.logo {
     width: 100%; 
     height: auto;
     max-width: 300px;
     margin-top: 100px;
+}
+img.logo:hover {
+    text-decoration: none;
 }
 
 footer {
