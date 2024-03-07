@@ -1,7 +1,8 @@
 /* Global rules */
+
 .topnav {
     margin: auto;
-    background-color: transparent;
+    background-color: #020347;
     overflow: auto;
     position: fixed;
     width: 80%;
@@ -35,11 +36,10 @@
 }
 
 .topnav a.telephone {
-    float: left;
     margin-left: 15%;
 }
 
-.fa {
+.fa-brands {
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -54,7 +54,7 @@
     color: white;
     padding: 12px 15px !important;
 }
-.fa-twitter {
+.fa-tiktok {
     color: white;
 }
 .fa-youtube {
@@ -63,7 +63,7 @@
 .fa-instagram {
     color: white;
 }
-.fa-snapchat-ghost {
+.fa-yelp {
     color: white;
 }
 .social-container {
@@ -85,7 +85,6 @@
     
     .topnav.responsive {
         position: fixed;
-        max-width: 25%;
     }
     
     .topnav.responsive a {
@@ -119,6 +118,10 @@
 @media all and (min-width:501px) and (max-width:1199px) {
     .topnav {
         width: 90%;
+    }
+    .telephone {
+        margin-left: auto !important;
+        justify-content: left;
     }
 }
 
