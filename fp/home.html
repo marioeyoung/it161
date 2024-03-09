@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/forms.css">
   <script src="https://kit.fontawesome.com/fe9a3cb961.js" crossorigin="anonymous"></script>
   <link rel="icon" href="images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <header>
@@ -24,8 +25,8 @@
       <a href="services.html">Services</a>
       <a href="quote.html">Quote</a>
       <a href="about.html">About Us</a>
-      <a href="commercial.html">Commercial</a>
-      <a class="telephone" href="tel:2535070804" target="_blank">Call to Schedule&colon; &lpar;253&rpar; 507 &dash; 0804</a>
+      <a href="commercial.html">Fleet</a>
+      <a class="telephone" href="tel:2535070804" target="_blank"><span>Call Now</span>&colon; &lpar;253&rpar; 507 &dash; 0804</a>
         <div class="social-container">
           <div><a href="https://www.facebook.com/people/Autoglass-Guys/100091513656321/" class="fa-brands fa-facebook" target="_blank"></a></div>
           <div><a href="https://www.tiktok.com/@autoglassguyswa" class="fa-brands fa-tiktok" target="_blank"></a></div>
@@ -36,45 +37,119 @@
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
     <a href="home.html"><img class="logo" src="../fp/images/logo.png"/></a>  
-<h1 class="page-header">HTML Ipsum Presents</h1>
+<h1 class="page-header">Find your Autoglass Guy</h1>
+<video muted loop id="backgroundvideo">
+  <source src="https://i.vimeocdn.com/video/1725042222-97fb67aaac9999dc03dcbdc3aac54e5457d51ff180e001678fac9f2d2f2729ec" type="video/mp4">
+</video>
+<p>Choose Autoglass Guys for exceptional automotive glass repair and replacement.  Our skilled technicians, quality materials, competitive pricing, <strong>and</strong> reliable service makes us your top choice. We pair unparalleled windshield replacements with amazing customer service for our customers.</p>
+				<h2>OUR SERVICE PROMISE AND GUARANTEE</h2>
+        <h3>Knowledgeable Staff</h3>
+        <p>Our technicians have decades of autoglass experience between them. We are dedicated to quality repairs with the highest-quality replacement parts.</p>
 
-				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-				<h2>Header Level 2</h2>
-
-				<ol>
-				<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-				<li>Aliquam tincidunt mauris eu risus.</li>
-				</ol>
-
-				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-				<h3>Header Level 3</h3>
-        <img src="https://picsum.photos/200/200"/>
-
-				<ul>
-				   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-				   <li>Aliquam tincidunt mauris eu risus.</li>
-				</ul>
-
-				<pre><code>
-				#header h1 a {
-				  display: block;
-				  width: 300px;
-				  height: 80px;
-				}
-				</code></pre>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-
+<table>
+  <tr>
+    <th>
+      <h3>Autoglass Guy Guarantee</h3>
+    </th>
+    <th>
+      <h3>The Autoglass Guy Way</h3>
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <p>We stand behind the quality of our work and offer a lifetime warranty on all our auto glass services. If you experience any issues with our work, we will address them promptly and to your satisfaction. At Autoglass Guys, we believe in providing excellent customer service and building lasting relationships with our clients.</p>
+      <p>Whether you need a windshield replaced, or any other automotive glass, we do it all! From windshield replacement to sunroofs! We strive our best to provide an experience with your auto glass replacement.</p>
+    </td>
+    <td>
+      <p>As the Autoglass Guys, we are committed to providing the highest quality auto glass services with transparency and efficiency. Our experienced technicians use state-of-the-art equipment to diagnose and repair your windshield issues quickly and accurately. We pride ourselves on our attention to detail and will work tirelessly until you are fully satisfied with our work.</p>
+      <p>We're committed to providing a stress-free experience to both new and returning customers. Our shop only sources parts from reputable brands to ensure that your repair or replacement meets the highest standards of automotive safety.</p>
+    </td>
+  <tr>  
+    <td>
+      <button href="about.html">Our Warranty</button>
+    </td>
+    <td>
+      <button href="about.html">Learn More</button>
+    </td>
+  </tr>
+</table>
+<h2>See what our customers think of us!</h2>
+<!--Reviews section courtesy of embedsocial.com-->
+<div class="embedsocial-hashtag" data-ref="0b88c29185141bbd91d83183f454231eba49a37a"> 
+  <a class="feed-powered-by-es feed-powered-by-es-slider-img" href="https://embedsocial.com/blog/embed-google-reviews/" target="_blank" title="Embed Google reviews"><img src="https://embedsocial.com/cdn/images/embedsocial-icon.png" alt="EmbedSocial"></a> </div>
+  <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+  <!--end reviews section-->
+  <!--Begin FAQ-->
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+  <details>
+    <summary>How much does it cost to replace a windshield?</summary>
+    <p> The cost of replacing a windshield can vary depending on several factors, including the make and model of your vehicle and the type of windshield required. Additionally, the extent of damage and additional services needed, such as recalibration for advanced driver-assistance systems (ADAS), can impact the overall cost. For an accurate estimate, we recommend contacting our team for a personalized quote. </p>
+  </details>
+  <details>
+    <summary>
+      Do the Autoglass Guys use OEM windshields?
+    </summary>
+    <p>
+      Yes, at Autoglass Guys we try to use Original Equipment Manufacturer (OEM) windshields whenever possible. OEM windshields are manufactured to the same specifications as the original glass installed in your vehicle, ensuring a precise fit and maintaining the integrity of your vehicle's safety features. 
+    </p>
+  </details>
+  <details>
+    <summary>
+      What should I avoid after getting a windshield replaced?
+    </summary>
+    <p>
+      After getting your windshield replaced, it's important to follow a few precautions:
+    </p>
+      <ul>
+        <li>
+          Avoid slamming doors or driving over speed bumps for the first 24 hours to allow the adhesive to cure properly.
+        </li>
+        <li>
+          Do not remove any retention tape or stickers placed by the technician, as they help in securing the windshield.
+        </li>
+        <li>
+          Avoid using high-pressure car washes for the first 48 hours, as excessive water pressure can affect the adhesive bond.
+        </li>
+      </ul>
+  </details>
+  <details>
+    <summary>
+      What temperature do windshield cracks spread?
+    </summary>
+    <p>
+      Extreme temperature changes can cause windshield cracks to spread. However, there isn't a specific temperature at which this occurs. It's best to address any cracks as soon as possible to prevent further damage, regardless of the temperature outside. 
+    </p>
+  </details>
+  <details>
+    <summary>
+      Is it OK to have a cracked windshield?
+    </summary>
+    <p>
+      It's not recommended to leave a cracked windshield unaddressed. Even small cracks can compromise the structural integrity of the glass and may worsen over time. Additionally, a cracked windshield can obstruct your vision and increase the risk of injury in the event of an accident. We recommend seeking professional assistance to evaluate and repair or replace your windshield promptly.
+    </p>
+  </details>
+  <details>
+    <summary>
+      Is it safe to drive with a cracked windshield that is spreading?
+    </summary>
+    <p>
+      Driving with a cracked windshield, especially one that is spreading, is not safe. The crack weakens the structural integrity of the glass, reducing its ability to protect you in the event of a collision. Additionally, a spreading crack may impair your visibility, making it dangerous to drive. We recommend getting your windshield repaired or replaced as soon as possible to ensure your safety on the road. 
+    </p>
+  </details>
+  <details>
+    <summary>
+      Can I stop a crack in my windshield from spreading?
+    </summary>
+    <p>
+      While there are various DIY methods suggested to stop a crack from spreading, they are temporary solutions at best. The most effective and long-lasting solution is to have the crack repaired or the windshield replaced by a professional. Our experienced technicians can assess the damage and recommend the best course of action to prevent the crack from spreading and ensure the safety of your vehicle.
+    </p>
+  </details>
+  </div>
+				
 <footer>
-  <p><small>&copy; 2021-<span id="this-year"></span> by Mario Young, All Rights Reserved ~ 
+  <p><small>&copy; 2021-<span id="this-year"></span> by Autoglass-Guys LLC - All Rights Reserved ~ 
+  Designed by <small>&copy; 2021-<span id="this-year"></span> Mario Young, All Rights Reserved ~ 
     <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
     <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
   </p>

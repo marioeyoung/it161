@@ -1,11 +1,12 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Spectral');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One');
 
 html {
     background-color: #023047;
-    font-family: 'Noto+Sans', sans-serif;
+    font-family: 'Fugaz+One', sans-serif;
     font-size: 0.95em;
+    text-decoration: #000;
     line-height: 1.5em;
     background-image: url("../images/background.jpg");
     background-repeat: repeat;
@@ -20,7 +21,7 @@ body{
 
 ::selection {
     color: #000; 
-    background: #ff0;
+    background: rgb(235, 160, 9);
 }
 
 h1 {
@@ -41,13 +42,12 @@ h1.page-header{
     -moz-border-radius-topright: 5px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    margin-top: 100px;
     text-align: center;
 }
 
 main.wrapper {
-    margin-top: 50px;
-    background-color: #d2d0d0;
+    margin-top: 65px;
+    background-color: #4682b4;
     overflow: auto;
     -moz-border-radius-bottomleft: 5px;
     -moz-border-radius-bottomright: 5px;
@@ -55,7 +55,20 @@ main.wrapper {
     border-bottom-right-radius: 5px;
 }
 
+.faq {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+ul {
+    display: table;
+    list-style-position: inside;
+}
+
 p {
+    text-align: center;
     margin: 1em; /* Top Right Bottom Left (TRBL) */
 }
 
@@ -67,7 +80,7 @@ p.hidden-text {
 
 h2,h3 {
     font-weight: normal;
-    margin-left: 1em;
+    text-align: center;
     line-height: 1em;
 }
 
@@ -81,14 +94,65 @@ a:hover {
     background-color: #c6e5ff;
     text-decoration: none;
 }
+
+button {
+    margin: auto;
+    align-items: center;
+    background-color: #d2d0d0;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    fill: #000;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:focus {
+    color: #171e29;
+}
+
+button:hover {
+    border-color: #023047;
+    color: #023047;
+    fill: #023047;
+}
+
+button:active {
+    border-color: #023047;
+    color: #023047;
+    fill: #023047;
+}
+
 img.logo {
+    display: block;
+    margin-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%; 
     height: auto;
     max-width: 300px;
-    margin-top: 100px;
 }
 img.logo:hover {
     text-decoration: none;
+}
+
+.faq {
+    display: block;
 }
 
 footer {
@@ -121,6 +185,11 @@ footer {
 }
 
 /* TABLET */
+@media (min-width: 768px) {
+    button {
+    min-width: 170px;
+    }
+}
 @media all and (min-width:501px) and (max-width:1199px) {
     main.wrapper {
         width: 90%;
@@ -137,6 +206,9 @@ footer {
         float: right;
         margin-left: 1em;
     }
+    .logo img {
+        margin-top: 100px;
+    }
 
 }
 
@@ -144,6 +216,7 @@ footer {
 @media all and (max-width:500px) {
     main.wrapper {
         width: 100%;
+        margin-top: 0;
     }
     
     h1 {
@@ -153,6 +226,9 @@ footer {
     
     picture.profile img {
         width: 100%;
+    }
+    .logo img {
+        margin-top: 140px;
     }
     
 }

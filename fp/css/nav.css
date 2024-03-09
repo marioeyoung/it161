@@ -1,20 +1,21 @@
 /* Global rules */
 
 .topnav {
+    display: flex;
+    justify-content: space-between;
     margin: auto;
-    background-color: #020347;
+    background-color: transparent;
     overflow: auto;
     position: fixed;
-    width: 80%;
 }
 
-.topnav.scrolled{
-    background-color: #004da8 !important;
+.scrolled {
+    background-color: #020347 !important;
     transition: background-color 200ms ease-in-out;
 }
 
 .topnav a {
-    float: left;
+    flex-grow: 1;
     display: block;
     color: whitesmoke;
     text-align: center;
@@ -36,7 +37,8 @@
 }
 
 .topnav a.telephone {
-    margin-left: 15%;
+    position: relative;
+    margin-left: 10%;
 }
 
 .fa-brands {
@@ -68,12 +70,17 @@
 }
 .social-container {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 /* Responsive rules - apply when screen width is less than 1200px */
 
 @media screen and (max-width: 1199px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .topnav a:not(.telephone,:first-child) {
         display: none;
     }
@@ -91,26 +98,38 @@
         float: none;
         display: block;
         text-align: left;
-        margin-left: auto;
-        background-color: black;
     }
-    
+
     .topnav.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
+
+    .topnav.responsive .social-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto; /* Push social container to bottom */
+        margin-right: 15px; /* Adjust margin as needed */
+    }
+
+    .topnav.responsive .telephone {
+        display: block;
+        margin-left: auto;
+        margin-right: 15px; /* Adjust margin as needed */
+    }
+
     .social-container {
         display: none;
     }
-
 }
-
 
 /* DESKTOP */
 @media all and (min-width:1200px) {
     .topnav {
         width: 80%;
+
     }
 }
 
@@ -118,10 +137,8 @@
 @media all and (min-width:501px) and (max-width:1199px) {
     .topnav {
         width: 90%;
-    }
-    .telephone {
-        margin-left: auto !important;
-        justify-content: left;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -129,5 +146,7 @@
 @media all and (max-width:500px) {
     .topnav {
         width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
