@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
 html {
-    background-color: #023047;
+    background-color: lightgrey;
     font-family: "Fugaz One", sans-serif;
     font-size: 0.95em;
     text-decoration: #000;
     line-height: 1.5em;
-    background-image: url("../images/background.jpg");
+    /*background-image: url("../images/background.jpg");*/
     background-repeat: repeat;
     background-size: 2000px 1200px;
     background-attachment: fixed;
@@ -55,6 +55,11 @@ main.wrapper {
     border-bottom-right-radius: 5px;
 }
 
+details summary > * { 
+    display: inline;
+}
+
+
 .faq {
     display: block;
     margin-left: auto;
@@ -62,9 +67,8 @@ main.wrapper {
     text-align: center;
 }
 
-ul.faqlist {
-    display: table;
-    list-style-position: inside;
+summary.faq::after{
+    content:attr(fa-solid fa-chevron-down)
     /* .has-submenu > a::after {
     font-family: "Font Awesome 5 Free";
     font-size: 12px;
@@ -75,6 +79,10 @@ ul.faqlist {
     padding-left: 5px;
     <i class="fa-solid fa-chevron-down"></i>
 }*/
+}
+
+ul {
+    list-style-type: none;
 }
 
 p {
@@ -93,7 +101,6 @@ h2,h3 {
     text-align: center;
     line-height: 1em;
 }
-ul
 
 a {
     color: #4A4DE7;
@@ -156,14 +163,14 @@ img.logo {
     margin-right: auto;
     width: 100%; 
     height: auto;
-    max-width: 300px;
+    max-width: 500px;
 }
 img.logo:hover {
     text-decoration: none;
 }
 
-.faq {
-    display: block;
+video.hero {
+    max-width: 100%;
 }
 
 footer {
@@ -178,19 +185,13 @@ footer {
 /* DESKTOP */
 @media all and (min-width:1200px) {
     main.wrapper {
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     
     h1 {
-        width: 79%;
+        width: 99%;
         padding-left: 1%;
-    }
-    
-    picture.profile img {
-        width: 50%;
-        float: left;
-        margin-right: 2em;
     }
     
 }
