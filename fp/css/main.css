@@ -15,7 +15,7 @@ html {
 }
 
 body{
-    margin:0; /* removes gap at top of page */
+    margin: 0; /* removes gap at top of page */
     position: relative;
 }
 
@@ -55,20 +55,38 @@ main.wrapper {
     border-bottom-right-radius: 5px;
 }
 
+.embedfeed {
+    z-index: -1;
+}
+
 details summary > * { 
     display: inline;
 }
 
+details {
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
 
 .faq {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30%;
+    margin-right: 30%;
     text-align: center;
 }
 
-summary.faq::after{
-    content:attr(fa-solid fa-chevron-down)
+summary {
+    display: flex;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after{
+    content: '';
+    background: url(https://fontawesome.com/icons/chevron-down?f=classic&s=solid)
     /* .has-submenu > a::after {
     font-family: "Font Awesome 5 Free";
     font-size: 12px;
@@ -116,7 +134,7 @@ a:hover {
 button {
     margin: auto;
     align-items: center;
-    background-color: #d2d0d0;
+    background-color: #D7F9FF;
     border: 2px solid #000;
     box-sizing: border-box;
     color: #000;
@@ -173,6 +191,12 @@ video.hero {
     max-width: 100%;
 }
 
+#iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
 footer {
     clear: both;
     text-align: center;
@@ -222,6 +246,10 @@ footer {
         margin-top: 100px;
     }
 
+    .faq {
+        margin: 5%;
+    }
+
 }
 
 /* PHONE */
@@ -241,6 +269,10 @@ footer {
     }
     .logo img {
         margin-top: 140px;
+    }
+    
+    .faq {
+        margin: 0;
     }
     
 }

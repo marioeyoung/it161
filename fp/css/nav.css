@@ -3,6 +3,7 @@
 .topnav {
     display: block;
     margin: auto;
+    top: 0;
     background-color: transparent;
     overflow: auto;
     position: fixed;
@@ -78,6 +79,8 @@
 .social-container {
     display: flex;
     justify-content: flex-end;
+    right: 5px;
+
 }
 
 /* Responsive rules - apply when screen width is less than 1200px */
