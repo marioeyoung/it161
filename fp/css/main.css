@@ -1,10 +1,10 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
     background-color: lightgrey;
-    font-family: "Fugaz One", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 0.95em;
     text-decoration: #000;
     line-height: 1.5em;
@@ -53,10 +53,6 @@ main.wrapper {
     -moz-border-radius-bottomright: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-
-.embedfeed {
-    z-index: -1;
 }
 
 details summary > * { 
@@ -191,6 +187,34 @@ video.hero {
     max-width: 100%;
 }
 
+.discountrow:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.discountcolumn {
+    float: left;
+    width: 33%;
+}
+
+.flexible img {
+    width: 100%;
+}
+
+.flexible {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flexible > div {
+    max-width: 300px;
+}
+
+.justifyright {
+    justify-content: right;
+}
+
 #iframe {
     width: 100%;
     height: 700px;
@@ -275,4 +299,7 @@ footer {
         margin: 0;
     }
     
+    .discountcolumn {
+        width: 100%;
+    }
 }
