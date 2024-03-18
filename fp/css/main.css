@@ -57,12 +57,12 @@ main.wrapper {
 
 details summary > * { 
     display: inline;
+    cursor: default;
 }
 
 details {
-    padding: 10px;
-    background-color: lightgray;
-    border-radius: 5px;
+    cursor: default;
+    transition: all 0.5s;
 }
 
 .faq {
@@ -70,10 +70,14 @@ details {
     margin-left: 30%;
     margin-right: 30%;
     text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
 }
 
 summary {
     display: flex;
+    cursor: default;
 }
 
 summary::-webkit-details-marker {
@@ -81,8 +85,7 @@ summary::-webkit-details-marker {
 }
 
 summary::after{
-    content: '';
-    background: url(https://fontawesome.com/icons/chevron-down?f=classic&s=solid)
+    content: url('../images/icons/chevron-down-solid.svg');
     /* .has-submenu > a::after {
     font-family: "Font Awesome 5 Free";
     font-size: 12px;
@@ -217,7 +220,8 @@ video.hero {
 
 #map {
     position: relative;
-    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 #iframe {
