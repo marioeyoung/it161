@@ -19,7 +19,6 @@
 
 .topnav.scrolled a.active, .topnav.scrolled a:hover {
     background-color: #D7F9FF;
-    height: auto;
 }
 
 .topnav a {
@@ -31,7 +30,7 @@
     text-decoration: none;
     text-transform: capitalize;
     font-size: 16px;
-    height: 26px;
+    height: auto;
 }
 .topnav a:hover {
     background-color: #4682B4;
@@ -52,7 +51,7 @@
 }
 
 .fa-brands {
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
@@ -81,7 +80,8 @@
 .social-container {
     display: flex;
     justify-content: flex-end;
-    right: 5px;
+    right: 10px;
+    height: 46px;
 
 }
 

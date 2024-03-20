@@ -186,6 +186,10 @@ img.logo:hover {
     text-decoration: none;
 }
 
+.table-picture {
+    max-height: 500px;
+}
+
 video.hero {
     max-width: 100%;
 }
@@ -196,7 +200,12 @@ video.hero {
     clear:both;
 }
 
-.discountcolumn {
+.discountcolumnhalf {
+    float: left;
+    width: 50%;
+}
+
+.discountcolumnthirds {
     float: left;
     width: 33%;
 }
