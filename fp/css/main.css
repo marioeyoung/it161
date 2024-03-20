@@ -86,7 +86,9 @@ summary::-webkit-details-marker {
 
 summary::after{
     content: url('../images/icons/chevron-down-solid.svg');
-    /* .has-submenu > a::after {
+    /* 
+    figuring out how to add a chevron to the FAQ section.
+    .has-submenu > a::after {
     font-family: "Font Awesome 5 Free";
     font-size: 12px;
     line-height: 16px;
@@ -95,8 +97,10 @@ summary::after{
     color: white;
     padding-left: 5px;
     <i class="fa-solid fa-chevron-down"></i>
-}*/
+    }
+*/  
 }
+
 
 ul {
     list-style-type: none;
