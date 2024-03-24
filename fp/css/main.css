@@ -123,6 +123,14 @@ h2,h3 {
     line-height: 1em;
 }
 
+.tableheader {
+    font-weight: normal;
+    text-align: center;
+    line-height: 1em;
+    font-size: larger;
+}
+
+
 a {
     color: #4A4DE7;
     text-decoration: none;
